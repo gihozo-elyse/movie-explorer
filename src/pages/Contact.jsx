@@ -1,38 +1,7 @@
-import React, { useState } from 'react';
+
+import React from 'react';
 
 function Contact() {
-  
-  
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
- 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
- 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    console.log('Form submitted with data:', formData);
-    alert(`Thank you ${formData.name}! Your message has been received. We'll get back to you at ${formData.email} soon.`);
-    
-   
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
-  };
-
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -86,9 +55,8 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
-                
                   <p className="text-gray-600">Nyamirambo</p>
-                  <p className="text-gray-600">kigali Rwanda</p>
+                  <p className="text-gray-600">Kigali, Rwanda</p>
                 </div>
               </div>
 
@@ -107,7 +75,8 @@ function Contact() {
               Send us a Message
             </h2>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            
+            <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-gray-100 font-semibold mb-2">
                   Your Name *
@@ -116,11 +85,8 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white"
                   placeholder="elyse gihozo"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white bg-gray-800"
                 />
               </div>
 
@@ -132,11 +98,8 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white"
                   placeholder="elyse@example.com"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white bg-gray-800"
                 />
               </div>
 
@@ -147,18 +110,15 @@ function Contact() {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
                   rows="5"
-                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none text-white"
                   placeholder="How can we help you?"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none text-white bg-gray-800"
                 />
               </div>
 
               <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-yellow-700 to-yellow-400 hover:from-gray-100 hover:to-yellow-200 text-gray-100  hover:text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg"
+                type="button"
+                className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg"
               >
                 Send Message
               </button>
