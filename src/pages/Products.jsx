@@ -3,7 +3,7 @@ import ProductCard from '../components/ProductCard';
 
 function Products() {
   
-  // products organized by category for easy display
+  //  products organized by category 
   const productsByCategory = {
     Electronics: [
       {
