@@ -6,6 +6,7 @@ import Home from "./pages/Home.jsx"
 import Products from './pages/Products.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
+import Footer   from './pages/Footer.jsx'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
+          <Footer />
         </div>
       </div>
     </Router>
