@@ -52,15 +52,15 @@ function Contact() {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <div className="bg-gradient-to-br from-yellow-500 to-yellow-600 text-black rounded-full p-3 mr-4">
+                <div className="bg-gradient-to-br from-yellow-500 to-yellow-900 text-black rounded-full p-3 mr-4">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                  <p className="text-gray-600">support@shophub.com</p>
-                  <p className="text-gray-600">sales@shophub.com</p>
+                  <p className="text-gray-600">support@inzorashophub.com</p>
+                  <p className="text-gray-600">sales@inzorashophub.com</p>
                 </div>
               </div>
 
@@ -72,8 +72,8 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
-                  <p className="text-gray-600">(555) 987-6543</p>
+                  <p className="text-gray-600">(+250) 78234567</p>
+                  <p className="text-gray-600">(+250) 7876543</p>
                 </div>
               </div>
 
@@ -86,9 +86,9 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-1">Address</h3>
-                  <p className="text-gray-600">123 Shopping Street</p>
-                  <p className="text-gray-600">New York, NY 10001</p>
-                  <p className="text-gray-600">United States</p>
+                
+                  <p className="text-gray-600">Nyamirambo</p>
+                  <p className="text-gray-600">kigali Rwanda</p>
                 </div>
               </div>
 
@@ -136,7 +136,7 @@ function Contact() {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
-                  placeholder="john@example.com"
+                  placeholder="elyse@example.com"
                 />
               </div>
 
