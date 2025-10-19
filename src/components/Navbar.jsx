@@ -52,10 +52,10 @@ function Navbar() {
           <div className="p-6 border-b border-yellow-500/30">
             <Link to="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
               <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center">
-                <span className="text-2xl">✨</span>
+                <span className="text-2xl"></span>
               </div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                ShopHub
+                inzoraShopHub
               </h1>
             </Link>
           </div>
@@ -112,7 +112,7 @@ function Navbar() {
           <div className="p-6 border-t border-yellow-500/30">
             <div className="text-sm text-gray-400 text-center">
               <p className="font-semibold text-yellow-500 mb-1">Premium Shopping</p>
-              <p>&copy; 2024 ShopHub</p>
+              <p>&copy; 2025 Inzora ShopHub</p>
             </div>
           </div>
         </div>

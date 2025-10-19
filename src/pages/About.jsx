@@ -36,16 +36,16 @@ function About() {
           </h1>
           <div className="bg-white rounded-lg shadow-md p-8">
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Welcome to <strong>ShopHub</strong>, your number one source for all things shopping. 
+              Welcome to <strong>Inzora ShopHub</strong>, your number one source for all things shopping. 
               We're dedicated to providing you the very best of products, with an emphasis on quality, 
               customer service, and uniqueness.
             </p>
             <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-              Founded in 2024, ShopHub has come a long way from its beginnings. When we first started out, 
+              Founded in 2022, ShopHub has come a long way from its beginnings. When we first started out, 
               our passion for providing the best shopping experience drove us to start our own business.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              We now serve customers all over the world and are thrilled to be a part of the fair trade wing 
+              We now serve customers in all provence of Rwanda and are thrilled to be a part of the fair trade wing 
               of the e-commerce industry. We hope you enjoy our products as much as we enjoy offering them to you.
             </p>
           </div>
