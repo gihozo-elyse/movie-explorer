@@ -92,7 +92,7 @@ function Contact() {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-black to-gray-900 text-white rounded-lg p-6 mt-8 border border-yellow-500/30">
+              <div className="bg-gradient-to-br from-black to-gray-800 text-white rounded-lg p-6 mt-8 border border-yellow-500/30">
                 <h3 className="font-semibold text-yellow-500 mb-2">Business Hours</h3>
                 <p className="text-gray-300">Monday - Friday: 9:00 AM - 6:00 PM</p>
                 <p className="text-gray-300">Saturday: 10:00 AM - 4:00 PM</p>
@@ -102,14 +102,14 @@ function Contact() {
           </div>
 
           
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">
+          <div className="bg-black rounded-lg shadow-md p-8">
+            <h2 className="text-2xl font-bold text-gray-100 mb-6">
               Send us a Message
             </h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="name" className="block text-gray-100 font-semibold mb-2">
                   Your Name *
                 </label>
                 <input
@@ -119,13 +119,13 @@ function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white"
                   placeholder="elyse gihozo"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="email" className="block text-gray-100 font-semibold mb-2">
                   Your Email *
                 </label>
                 <input
@@ -135,13 +135,13 @@ function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent text-white"
                   placeholder="elyse@example.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
+                <label htmlFor="message" className="block text-gray-100 font-semibold mb-2">
                   Your Message *
                 </label>
                 <textarea
@@ -151,14 +151,14 @@ function Contact() {
                   onChange={handleChange}
                   required
                   rows="5"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none"
+                  className="w-full px-4 py-3 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:border-transparent resize-none text-white"
                   placeholder="How can we help you?"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-black to-gray-900 hover:from-yellow-600 hover:to-yellow-500 text-white hover:text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg"
+                className="w-full bg-gradient-to-r from-yellow-700 to-yellow-400 hover:from-gray-100 hover:to-yellow-200 text-gray-100  hover:text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg"
               >
                 Send Message
               </button>
