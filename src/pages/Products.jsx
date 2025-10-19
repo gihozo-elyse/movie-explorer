@@ -71,7 +71,7 @@ function Products() {
         name: 'Phone Case',
         price: 19.99,
         category: 'Accessories',
-        image: '/accessory1.jpg'
+        image: '/accessory4.jpg'
       }
     ]
   };
