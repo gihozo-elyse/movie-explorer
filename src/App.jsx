@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Navbar from "./components/Navbar"
 import Home from "./pages/Home.jsx"
+import Products  from './pages/Products.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/products" element={<Products />} />
             </Routes>
           </main>
         </div>

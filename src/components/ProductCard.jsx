@@ -28,7 +28,7 @@ function ProductCard({ image, name, price, category }) {
         </h3>
         <div className="flex items-center justify-between mt-4">
           <span className="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-700 bg-clip-text text-transparent">
-            ${price}
+            {price}RWF
           </span>
           <button 
             onClick={handleAddToCart}
