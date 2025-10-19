@@ -118,7 +118,7 @@ function Contact() {
 
               <button
                 type="button"
-                className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg"
+                className="w-full bg-gradient-to-r from-yellow-400 via-yellow-700 hover:from-yellow-200 hover:to-yellow-400 text-black font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-lg "
               >
                 Send Message
               </button>
