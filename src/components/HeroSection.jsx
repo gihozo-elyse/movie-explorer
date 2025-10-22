@@ -14,7 +14,6 @@ function HeroSection() {
 
   return (
     <div className="relative bg-gray-900 overflow-hidden">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90" />
         <div 
@@ -37,7 +36,6 @@ function HeroSection() {
             Explore cinematic gems, see what's hot, and track your movie journey.
           </p>
 
-          {/* Search Bar */}
           <div className="mt-10 max-w-2xl mx-auto">
             <form onSubmit={handleSearch} className="flex">
               <div className="relative flex-1">
