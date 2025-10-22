@@ -18,54 +18,21 @@ function Navbar() {
 
   return (
     <div className="relative">
-      <div className="bg-white shadow-md fixed w-full z-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16">
-            <div className="flex items-center">
-              <button
-                onClick={toggleSidebar}
-                className="lg:hidden mr-2 text-gray-700 hover:text-yellow-600"
-                aria-label="Toggle menu"
-              >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  {isOpen ? (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                  ) : (
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                  )}
-                </svg>
-              </button>
-              <Link to="/" className="flex-shrink-0 flex items-center">
-                <span className="text-2xl font-bold bg-gradient-to-r from-yellow-600 to-yellow-500 bg-clip-text text-transparent font-display">
-                  PopcornHub
-                </span>
-              </Link>
-            </div>
-
-            <div className="hidden lg:flex items-center space-x-4">
-              <Link 
-                to="/" 
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  isActive('/') ? 'text-yellow-600' : 'text-gray-700 hover:text-yellow-600'
-                }`}
-              >
-                Home
-              </Link>
-              <Link 
-                to="/favorites" 
-                className={`px-3 py-2 rounded-md text-sm font-medium ${
-                  isActive('/favorites') ? 'text-yellow-600' : 'text-gray-700 hover:text-yellow-600'
-                }`}
-              >
-                My Favorites {favorites.length > 0 && (
-                  <span className="ml-1 inline-flex items-center justify-center px-2 py-0.5 text-xs font-bold leading-none text-gray-900 bg-yellow-500 rounded-full">
-                    {favorites.length}
-                  </span>
-                )}
-              </Link>
-            </div>
-          </div>
-        </div>
+      {/* Mobile menu button */}
+      <div className="fixed top-4 left-4 z-40 lg:hidden">
+        <button
+          onClick={toggleSidebar}
+          className="p-2 rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {isOpen ? (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            ) : (
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            )}
+          </svg>
+        </button>
       </div>
 
       {isOpen && (
@@ -102,8 +69,8 @@ function Navbar() {
               onClick={() => setIsOpen(false)}
               className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${
                 isActive('/')
-                  ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold shadow-lg'
-                  : 'text-gray-300 hover:bg-gray-800 hover:text-blue-400'
+                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold shadow-lg'
+                  : 'text-gray-300 hover:bg-gray-800 hover:text-yellow-400'
               }`}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -117,8 +84,8 @@ function Navbar() {
               onClick={() => setIsOpen(false)}
               className={`flex items-center justify-between px-4 py-3 rounded-lg transition-all duration-200 ${
                 isActive('/favorites')
-                  ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold shadow-lg'
-                  : 'text-gray-300 hover:bg-gray-800 hover:text-blue-400'
+                  ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold shadow-lg'
+                  : 'text-gray-300 hover:bg-gray-800 hover:text-yellow-400'
               }`}
             >
               <div className="flex items-center space-x-3">

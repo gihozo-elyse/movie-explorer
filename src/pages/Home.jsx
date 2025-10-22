@@ -54,25 +54,30 @@ function Home() {
       {/* Hero Section */}
       <HeroSection />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Search and Filter Section */}
-        <div className="mb-10 bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex-1 max-w-2xl">
-              <SearchBar 
-                initialValue={searchQuery}
-                onSearch={handleSearch}
-                className="w-full"
-              />
-            </div>
-            
-            <div className="w-full md:w-auto">
+        <div className="mb-10 bg-gradient-to-r from-yellow-50 to-amber-50 p-6 rounded-2xl shadow-md border border-yellow-100">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Find Your Next Favorite Movie</h2>
+          
+          {/* Search Bar */}
+          <div className="max-w-3xl mx-auto mb-6">
+            <SearchBar 
+              initialValue={searchQuery}
+              onSearch={handleSearch}
+              className="w-full"
+            />
+          </div>
+          
+          {/* Category Filter */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-sm font-medium text-gray-600 mb-3 text-center">Or browse by category:</h3>
+            <div className="flex justify-center">
               <CategoryFilter 
                 categories={Array.from(categories)}
                 selectedCategory={categoryParam}
                 onCategoryChange={handleCategoryChange}
-                className="justify-center md:justify-end"
-                maxVisible={5}
+                className="flex-wrap justify-center gap-2"
+                maxVisible={8}
               />
             </div>
           </div>

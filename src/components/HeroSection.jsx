@@ -28,14 +28,13 @@ function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-7xl">
-            <span className="block">Discover Your Next</span>
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-              Favorite Movie
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-600">
+              Find Your Next Screen Obsession
             </span>
           </h1>
           
           <p className="mt-6 max-w-lg mx-auto text-xl text-gray-300">
-            Explore thousands of movies, find ratings, and create your personal watchlist.
+            Explore cinematic gems, see what's hot, and track your movie journey.
           </p>
 
           {/* Search Bar */}
@@ -57,7 +56,7 @@ function HeroSection() {
               </div>
               <button
                 type="submit"
-                className="inline-flex items-center px-6 py-4 border border-transparent text-base font-medium rounded-r-lg text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="inline-flex items-center px-6 py-4 border border-transparent text-base font-medium rounded-r-lg text-white bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
               >
                 Search
               </button>

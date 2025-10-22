@@ -1,42 +1,32 @@
-# InzoraShopHub - Static E-commerce Homepage
+# Movie Explorer
 
-## Description
-InzoraShopHub is a modern, responsive e-commerce website built with React and styled with Tailwind CSS. It features a clean, user-friendly interface with dynamic product displays, category filtering, and a responsive navigation system.
+A modern web application for discovering and exploring movies. Find your next favorite film, see what's trending, and keep track of movies you want to watch.
 
-## Features
-- Responsive navigation with mobile-friendly sidebar
-- Product categorization (Electronics, Fashion, Accessories)
-- Contact form with form validation
-- Dynamic product cards with hover effects
-- Gradient design elements 
+## 🚀 Features
 
-## Pages
-1. **Home** - Welcome page with featured products and hero section
-2. **Products** - Categorized product listing with filterable views
-3. **About** - Company information and story
-4. **Contact** - Contact form and business information
+- **Movie Discovery**: Browse through a vast collection of movies
+- **Advanced Search**: Find specific movies using the powerful search functionality
+- **Responsive Design**: Perfectly optimized for all devices
+- **Modern UI**: Sleek and intuitive user interface with smooth animations
+- **Movie Details**: Comprehensive information about each movie
+- **Watchlist**: Save movies you want to watch later
 
-## Technologies Used
-- React 18
-- Tailwind CSS
-- React Router DOM
-- Vite (Build tool)
+## 🛠 Technologies
 
-## Screenshots
-![Homepage Screenshot](./public/Screenshot1.png)
+- **Frontend**: React 18
+- **Styling**: Tailwind CSS
+- **Build Tool**: Vite
+- **State Management**: React Hooks
+- **Routing**: React Router
+- **Icons**: React Icons
+- **API**: [TMDB API](https://www.themoviedb.org/documentation/api)
 
-## Live Demo
-[Visit InzoraShopHub](ecommerce-react-project-xi.vercel.app)
-
-## Getting Started
-
-
-### Installation
+## 🚀 Installation
 
 1. Clone the repository
 ```bash
-git clone https://github.com/gihozo-elyse/ecommerce-react-project
-cd inzorashophub
+git clone https://github.com/your-username/movie-explorer.git
+cd movie-explorer
 ```
 
 2. Install dependencies
@@ -44,34 +34,56 @@ cd inzorashophub
 npm install
 ```
 
-3. Start the development server
+3. Create a `.env` file and add your TMDB API key:
+```env
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+4. Start the development server
 ```bash
 npm run dev
 ```
 
-4. Open http://localhost:5173 in your browser
+5. Open http://localhost:5173 in your browser
 
-### Project Structure
+## 📁 Project Structure
+
 ```
-inzorashophub/
-├── public/
-│   ├── images/
-│   └── ...
+movie-explorer/
+├── public/              # Static files
 ├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── ProductCard.jsx
-│   │   └── ...
-│   ├── pages/
-│   │   ├── Home.jsx
-│   │   ├── Products.jsx
-│   │   ├── About.jsx
-│   │   └── Contact.jsx
-│   ├── App.jsx
-│   └── main.jsx
+│   ├── assets/          # Images, fonts, etc.
+│   ├── components/      # Reusable UI components
+│   │   ├── common/      # Common components
+│   │   ├── layout/      # Layout components
+│   │   └── ui/          # UI components
+│   ├── pages/           # Page components
+│   ├── services/        # API services
+│   ├── utils/           # Helper functions
+│   ├── App.jsx          # Main App component
+│   └── main.jsx         # Application entry point
+├── .env                 # Environment variables
+├── .gitignore
 ├── package.json
 └── README.md
 ```
+
+## 📝 Dependencies
+
+- React 18
+- React DOM
+- React Router DOM
+- Tailwind CSS
+- React Icons
+- Axios (for API requests)
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### Dependencies
 ```json
