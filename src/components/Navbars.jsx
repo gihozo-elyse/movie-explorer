@@ -7,8 +7,13 @@ function Navbar() {
   const location = useLocation();
   const { favorites = [] } = useContext(FavoritesContext) || {};
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen)
+  const toggleSidebar = (e) => {
+    e?.stopPropagation();
+    setIsOpen(prev => !prev);
+  }
+
+  const closeSidebar = () => {
+    setIsOpen(false);
   }
 
   const isActive = (path) => {
@@ -19,7 +24,7 @@ function Navbar() {
   return (
     <div className="relative">
       {/* Mobile menu button */}
-      <div className="fixed top-4 left-4 z-40 lg:hidden">
+      <div className="fixed top-4 left-4 z-50 lg:hidden">
         <button
           onClick={toggleSidebar}
           className="p-2 rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none"
@@ -38,20 +43,20 @@ function Navbar() {
       {isOpen && (
         <div
           className="lg:hidden fixed inset-0 bg-black bg-opacity-70 z-30"
-          onClick={toggleSidebar}
+          onClick={closeSidebar}
           aria-hidden="true"
         />
       )}
 
       <aside
-        className={`fixed top-0 left-0 h-full bg-gradient-to-b from-yellow-900 to-gray-900 text-white shadow-2xl z-40 transition-transform duration-300 ${
+        className={`fixed top-0 left-0 h-full bg-gradient-to-b from-yellow-900 to-gray-900 text-white shadow-2xl z-40 transition-transform duration-300 transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } lg:translate-x-0 w-72`}
         aria-label="Sidebar"
       >
         <div className="flex flex-col h-full">
           <div className="p-6 border-b border-yellow-500/30">
-            <Link to="/" className="flex items-center space-x-2" onClick={() => setIsOpen(false)}>
+            <Link to="/" className="flex items-center space-x-2" onClick={closeSidebar}>
               <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z" />
@@ -66,7 +71,7 @@ function Navbar() {
           <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
             <Link
               to="/"
-              onClick={() => setIsOpen(false)}
+              onClick={closeSidebar}
               className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-all duration-200 ${
                 isActive('/')
                   ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold shadow-lg'
@@ -81,7 +86,7 @@ function Navbar() {
             
             <Link
               to="/favorites"
-              onClick={() => setIsOpen(false)}
+              onClick={closeSidebar}
               className={`flex items-center justify-between px-4 py-3 rounded-lg transition-all duration-200 ${
                 isActive('/favorites')
                   ? 'bg-gradient-to-r from-yellow-500 to-yellow-600 text-white font-semibold shadow-lg'
