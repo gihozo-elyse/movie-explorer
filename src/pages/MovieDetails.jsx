@@ -40,7 +40,7 @@ function MovieDetails() {
 
         setMovie(formattedMovie);
         setError(null);
-      } catch (err) {
+      } catch (error) {
         setError('Failed to load movie details. Please try again later.');
       } finally {
         setLoading(false);
