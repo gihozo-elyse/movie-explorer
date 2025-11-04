@@ -8,7 +8,7 @@ import Favorites from './pages/Favorites';
 import Footer from "./components/Footer";
 import './App.css'
 
-// Create context for favorites
+
 export const FavoritesContext = createContext();
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <div className="min-h-screen bg-gray-100 flex">
           <Navbar favoritesCount={favorites.length} />
           
-          {/* Main content area with left margin for sidebar */}
+         
           <div className="flex-1 flex flex-col min-w-0">
             <main className="flex-1 p-4 lg:ml-72">
               <Routes>
@@ -38,7 +38,7 @@ function App() {
   );
 }
 
-// Simple 404 component
+
 function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

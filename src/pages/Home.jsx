@@ -8,10 +8,10 @@ function Home() {
   const searchQuery = searchParams.get('search') || '';
   const { movies, loading, error } = useFetchMovies(searchQuery);
 
-  // Handle clearing search
+  // clearing search
   const clearSearch = () => setSearchParams({});
 
-  // Loading and error states
+  
   if (loading) return (
     <div className="flex justify-center items-center h-64">
       <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
